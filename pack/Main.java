@@ -3,6 +3,7 @@ package pack;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
 
 // class
 public class Main {
@@ -50,6 +51,14 @@ public class Main {
         } catch (CloneNotSupportedException e){
             e.printStackTrace();
         }
+
+
+        HashMap<String, String> capitals = new HashMap<String, String>();
+        capitals.put("England", "London");
+        capitals.put("Norway","Oslo");
+        System.out.println(capitals);
+        System.out.println(capitals.size());
+        System.out.println(capitals.get("Norway"));
 
 
 
