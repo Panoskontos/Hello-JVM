@@ -40,8 +40,11 @@ public class Main {
         Pig mypig = new Pig();
         mypig.animalSound();
 
-        Teacher myt = new Teacher();
-        myt.Talk();
+        Worker w1 = new Worker("Juan", 19);
+        w1.introduce();
+        System.out.println(w1.getName());
+
+
 
 
 
