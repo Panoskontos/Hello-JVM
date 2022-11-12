@@ -1,6 +1,6 @@
 package pack;
 
-public class Worker {
+public class Worker implements Cloneable{
     private String name;
     public int age;
     Worker(String name, int age){
@@ -18,5 +18,10 @@ public class Worker {
 
     public void introduce(){
         System.out.println("Workers name is: "+this.name+" he is number "+ this.age);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException{
+        return super.clone();
     }
 }

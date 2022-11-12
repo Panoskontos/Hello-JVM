@@ -44,6 +44,16 @@ public class Main {
         w1.introduce();
         System.out.println(w1.getName());
 
+        try{
+            Worker w2 = (Worker) w1.clone();
+            w2.introduce();
+        } catch (CloneNotSupportedException e){
+            e.printStackTrace();
+        }
+
+
+
+
 
 
 
