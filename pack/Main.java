@@ -1,9 +1,6 @@
 package pack;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.HashMap;
+import java.util.*;
 
 // class
 public class Main {
@@ -61,6 +58,12 @@ public class Main {
         System.out.println(capitals.get("Norway"));
 
 
+
+//        User Input
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter username");
+        String userName = myObj.nextLine();  // Read user input
+        System.out.println("Username is: "+userName);
 
 
 
