@@ -1,5 +1,6 @@
 package pack;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -22,19 +23,19 @@ public class Main {
             }
         }
 
-//        final class Library extends Building{
-//
-//        }
-//
-//        class SchholLibrary extends Library{
-//
-//        }
-//
-//
-//        Library lib = new Library();
-//        lib.build();
-//        SchholLibrary sclib = new SchholLibrary();
-//        sclib.build();
+
+        ArrayList<String> cars = new ArrayList<String>();
+        cars.add("BMW");
+        cars.add("Tesla");
+        cars.add("Benzo");
+        System.out.println(cars);
+        System.out.println(cars.set(0,"Opel"));
+        cars.remove(0);
+        System.out.println(cars.size());
+
+        for (String car : cars) {
+            System.out.println(car);
+        }
 
         Pig mypig = new Pig();
         mypig.animalSound();
